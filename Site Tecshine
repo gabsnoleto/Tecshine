@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se - TecShine</title>
+    <link rel="stylesheet" href="./cadastro.css">
+    <script src="./control.json"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cabeçalho do site -->
+    <header class="header">
+        <div class="background-container"></div>
+        
+        <div class="container">
+            <div class="header-container">
+                <div id="div-logo">
+                <img src="./img/Component 3.png" src="./img/Ellipse 10.png" alt="">
+                <h1 class="logo-text">TECSHINE</h1>
+                </div>
+                <ul class="nav-bar">
+                    <li><a href="telaCadastro.html">Home</a></li>
+                    <li id="li-center"><a href="">Sobre</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+                <div class="div-login-cadastro">
+                    <a href="" id="btn-cadastro">Cadastre-se</a>
+                    <a href="" id="btn-login">Login</a>
+                </div>
+            </div>
+        </div>
+    </header>
+<!-- termina o cabeçalho -->
+    <section class="section1">
+        <div class="container1">
+            <div class="session1-container">
+                <img src="./img/persona1.png" alt="" id="index-pessoa">
+                <div class="container2">
+                    <h3 class="title">Cadastro</h3>
+                    <span class="subtitle"> Não é um cliente TecShine? Faça seu cadastro!</span>
+                    <div class="content">
+                        <label for="" id="texto1">Nome do Usuário</label> <input type="text" id="caixa1" autofocus>
+                        <label>CNPJ</label> <input type="text" id="caixa2" autofocus>
+                        <label for="" id="texto1">Nome do responsável</label> <input type="text" id="caixa3" autofocus>
+                        <label for="" id="texto1">Telefone </label><input type="text" id="caixa4" autofocus>
+                        <label for="" id="texto1">CEP</label> <input type="text" id="caixa5" autofocus>
+                        <label for="" id="texto1">Endereço</label> <input type="text" id="caixa6" autofocus>
+                        <label for="" id="texto1">Nº</label> <input type="text" id="caixa7" autofocus>
+                        <label for="" id="texto1">Complemento</label> <input type="text" id="caixa8" autofocus>
+                        <label for="" id="texto1">Nova senha</label> <input type="text" id="caixa9" autofocus>
+                        <label for="" id="texto1">Confirmar senha</label> <input type="text" id="caixa10" autofocus>
+                        <button onclick="letsgo()" id="butao">Vamos lá!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="container4">
+            <div class="row">
+                <span class="texto1">Todos os direitos reservados para o site TecShine         ©2021 </span>
+                <ul class="social">
+                    <li class="social-insta"><img src="./img/instagram 1.png" alt="instagram"></li>
+                    <li class="social-facebook"><img src="./img/facebook 1.png" alt="facebool"></li>
+                    <li class="social-twitter"><img src="./img/twitter 1.png" alt="twitter"></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>
+
+
+
+
