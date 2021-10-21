@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECSHINE - Login </title>
+    <link rel="stylesheet" href="./login.css">
+    <link rel="shortcut icon" href="./images/image 17.png" type="image/x-icon">
+    
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+    <link href = "https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap" rel ="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <img src="./img/Component 3.png" alt="imagem logo lâmpada" class="imagelogo">
+            <img src="./img/Component 3.png" alt="imagem logo lâmpada" class="imagelogo2">
+            <span class="titulo">TECSHINE</span>
+            <ul class="navbar">
+                <li> <a href="#"> Home </a></li>
+                <li> <a href="#"> Sobre </a> </li>
+                <li> <a href="#"> Contato </a> </li>
+                <li> <a href="#"> <button onclick="cadastre()"> Cadastre-se </button></a></li>
+                <li class="selecionado"> Login </li>
+            </ul>
+        </div> 
+    </div>
+
+    <div class="banner">
+        <div class="container">
+            <p>LOGIN</p>
+            <label>Já é cliente? Faça seu login para acessar suas informações.</label>
+
+            <p class="form">CNPJ:</p> 
+            <input id="ipt_cnpj" type="text" placeholder="xx.xxx.xxx/0001-xx" oninput='maskCNPJ(this.value,ipt_cnpj)'>
+            <p class="form">Senha:</p> 
+            <input id="ipt_senha" type="password" style="-webkit-text-security:circle" placeholder="********" >
+
+            <!-- <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABDUlEQVQ4jd2SvW3DMBBGbwQVKlyo4BGC
+            4FKFS4+TATKCNxAggkeoSpHSRQbwAB7AA7hQoUKFLH6E2qQQHfgHdpo0yQHX8T3exyPR/ytlQ8kOhgV7FvSx9+xglA3lM3DBgh0LPn/onbJhcQ0b
+            v2SHlgVgQa/suFHVkCg7bm5gzB2OyvjlDFdDcoa19etZMN8Qp7oUDPEM2KFV1ZAQO2zPMBERO7Ra4JQNpRa4K4FDS0R0IdneCbQLb4/zh/c7QdH4N
+            L40tPXrovFpjHQr6PJ6yr5hQV80PiUiIm1OKxZ0LICS8TWvpyyOf2DBQQtcXk8Zi3+JcKfNafVsjZ0WfGgJlZZQxZjdwzX+ykf6u/UF0Fwo5Apfcq
+            8AAAAASUVORK5CYII=" onclick="mouseoverPass();" onmouseout="mouseoutPass();"  id="olho" class="olho"> -->
+
+            <img src="./img/Character11 1.png" alt="imagem_login" class="img_login"> 
+
+                <label class="box-check">Código de acesso:</label>
+                <input id="ipt_cod" class="ipt_cod" type="text">
+
+            <button onclick="entrar()"> Entrar </button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <span>Todos os direitos reservados ao site TecShine </span>
+            <span>©2021</span>
+            <img src="./img/instagram 1.png" alt="logo instagram" >
+            <img src="./img/facebook 1.png" alt="logo facebook" >
+            <img src="./img/twitter 1.png" alt="logo twitter" >
+        </div>
+    </div>
+
+</body>
+</html>
+<script>
+
+function maskCNPJ(value , id){
+        console.log('cheguei aqui', value, id)
+        var x = value.replace(/\D/g, '').match(/(\d{0,2})(\d{0,3})(\d{0,3})(\d{0,4})(\d{0,2})/);
+
+        id.value = !x[2] ? x[1] : x[1] + '.' + x[2] + '.' + x[3] + '/' + x[4] + (x[5] ? '-' + x[5] : '');
+        console.log('id',id.value) 
+}
+/*CONFIG OLHO ARRUMAR*/
+// function mouseoverPass(obj) {
+//   var obj = document.getElementById('ipt_senha');
+//   obj.type = "text";
+// }
+// function mouseoutPass(obj) {
+//   var obj = document.getElementById('ipt_senha');
+//   obj.type = "password";
+// }
+
+    function entrar(){
+        var cnpj = (ipt_cnpj.value).replace(/\D/g,'');
+        var senha = ipt_senha.value;
+        var cod = ipt_cod.value;
+        /*todos digitos que nao forem digitos(numeros) se torna vazio /D*/
+        /*tira texto de numero /d */
+        /*encontrar qualquer ocorencia ex: %ocorencia% */
+        
+        if (cnpj == "00000000000000" || 
+        cnpj == "11111111111111" || 
+        cnpj == "22222222222222" || 
+        cnpj == "33333333333333" || 
+        cnpj == "44444444444444" || 
+        cnpj == "55555555555555" || 
+        cnpj == "66666666666666" || 
+        cnpj == "77777777777777" || 
+        cnpj == "88888888888888" || 
+        cnpj == "99999999999999"){
+            alert ('CNPJ inválido!');
+            ipt_cnpj.focus();
+        }
+        else if ( senha == '' || cnpj == '' || cod == ''){
+            alert ('CNPJ, senha e/ou código em branco, insira os dados');
+        }
+        else if(senha.length > 8){
+            alert("A senha deve conter no máximo 8 digitos!");
+            ipt_senha.focus();
+        }
+        else if (cod == 100){
+            alert ('Você é um Administrador!');
+        }
+        else if (cod == 101){
+            alert ('Você é um Condomínio!');
+        }
+        else if (cod != 100 || cod !=101) {
+                alert ('Código inválido!');
+                ipt_cod.focus();
+        }
+        else{
+            alert ('CNPJ e/ou senha inválidos!');
+            /*colocar o caminho das telas adm e cond*/
+            // window.location.href = "./site-Institucional01.html"
+        }
+        ipt_cnpj.value='';
+        ipt_senha.value='';
+        ipt_cod.value='';
+    }
+</script>

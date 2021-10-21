@@ -1,0 +1,422 @@
+
+*{
+    padding: 0 auto;
+    margin: 0;
+}
+
+body{
+    background-color: #ffffff;
+}
+/* Fundo (Background da tela de cadastro) */
+.background {
+
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    
+    background: #FFFFFF;
+        
+}
+
+.background-container {
+    position: absolute;
+    width: 1315px;
+    height: 1000px;
+    left: 38px;
+    top: 80px;
+    
+    background: #FFD600;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25), inset 0px 4px 6px rgba(255, 255, 255, 0.29);
+    border-radius: 15px;
+}
+
+
+
+.header {
+    width: 100vw;
+    height: 55px;
+    display: top;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 10px rgba(34, 39, 46, 0.13);
+}
+
+.container{
+    margin: 0 0;
+    width: 90%;
+    
+}
+
+.header-container{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+}
+/* TECHSHINE - Logo */
+#div-logo{
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#div-logo img{
+margin-bottom: 0px;
+width: 40px;
+height: 40px;
+display: flex;
+left: 20px;
+top: 0px;
+flex-direction: row;
+margin-left: 25px;
+
+}
+
+#div-logo h1 {
+font-family: Archivo;
+font-style: normal;
+font-weight: normal;
+font-size: 25px;
+line-height: 40px;
+text-align: center;
+color: #414141;
+margin-left: 10px;
+
+}
+
+.nav-bar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+list-style: none;
+
+
+}
+
+.nav-bar li a{
+font-family: Chivo;
+font-style: normal;
+font-weight: 300;
+font-size: 15px;
+line-height: 24px;
+/* identical to box height */
+text-align: center;
+color: #414141;
+text-decoration: none;
+
+}
+
+.nav-bar li a:hover{
+font-family: Chivo;
+font-style: normal;
+font-weight: 300;
+font-size: 15px;
+line-height: 24px;
+/* identical to box height */
+text-align: center;
+color: #ffd000;
+text-decoration: none;
+transition: 0.5s;
+opacity: 0.9;
+}
+
+
+.nav-bar li {
+margin: 0 50px
+}
+.div-login-cadastro{
+    height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.div-login-cadastro #btn-cadastro, #btn-login{
+    padding: 3px 15px 3px 15px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.div-login-cadastro #btn-cadastro{
+    background-color: #414141;
+    border-radius: 10px;    
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    /* identical to box height */
+    text-align: center;
+    color: #ffd000;
+}
+
+.div-login-cadastro #btn-cadastro:hover{
+    background-color: #414141;
+    border-radius: 10px;    
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    /* identical to box height */
+    text-align: center;
+    color: #414141;
+    background-color: #ffd000;
+}
+
+.div-login-cadastro #btn-login{
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    /* identical to box height */
+    text-align: center;
+    color: #414141;
+}
+
+.div-login-cadastro #btn-login:hover{
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    /* identical to box height */
+    text-align: center;
+    color: #ffd000;
+}
+.div-logo {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    left: 15px;
+    top: 1000px;
+    
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    
+    color: #414141;
+}
+
+/* 1º Container da tela de cadastro (tela amarela) */
+.session1-container{
+margin-top: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.subtitle {
+    position: absolute;
+    width: 1000px;
+    height: 300px;
+    left: 200px;
+    top: 120px;
+    
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 59px;
+    text-align: center;
+    color: #414141;
+}
+
+/* Textos e imagens*/
+.content #texto1{
+    position: absolute;
+    width: 530px;
+    height: 660px;
+    left: 555px;
+    top: 170px;
+    display: flex;
+
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 40px;
+    text-align: end;
+    border-radius: 15px;
+    white-space: pre;
+
+    color: #414141;
+}
+
+.content #cond2{
+    position: absolute;
+    left: -450px;
+    border-radius: 25px;
+    width: 30vw;
+}
+
+.content #texto2{
+    position: absolute;
+    width: 530px;
+    height: 660px;
+    left: 150px;
+    top: 530px;
+    display: flex;
+
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: initial;
+    border-radius: 15px;
+    white-space: pre;
+
+    color: #505050;
+}
+
+.content #img1{
+    width: 25vw;
+    height: 25vh;
+    top: 50px;
+    position: absolute;
+    left: -41px;
+}
+
+.content #texto3{
+    position: absolute;
+    width: 530px;
+    height: 660px;
+    left: 550px;
+    top: 530px;
+    display: flex;
+
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: initial;
+    border-radius: 15px;
+    white-space: pre;
+
+    color: #505050;
+}
+
+.content #img2{
+    width: 25vw;
+    height: 25vh;
+    top: 50px;
+    position: absolute;
+    left: -42px;
+}
+
+.content #texto4{
+    position: absolute;
+    width: 530px;
+    height: 660px;
+    left: 1085px;
+    top: 115px;
+    display: flex;
+
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: initial;
+    border-radius: 15px;
+    white-space: pre;
+
+    color: #505050;
+}
+
+.div-pf #pf{
+    position: absolute;
+    height: 600px;
+    left: 100px;
+    top: 0px;
+    display: flex;
+    word-break: break-all;
+}
+
+.content #pf{
+
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 40px;
+    text-align: initial;
+    border-radius: 15px;
+    word-break: break-all;
+    white-space: pre;
+    background-color: rgb(214, 214, 214);
+    color: #505050;
+}
+
+/* Footer (Rodapé) do site */
+.container4 {
+    position: absolute;
+    width: 99vw;
+    height: 10vh;
+    left: 0px;
+    top: 1125px;
+    padding: 0;
+    display: flex;
+    background-color: #37474F;
+    }
+    
+    .texto1{
+    position: relative;
+    width: 15px;
+    height: 0px;
+    left: 10px;
+    top: 30px;
+    
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 20px;
+    text-align: center;
+    
+    color: #FFD600;
+    }
+
+    /*  logo facebook 1 */
+    .social-facebook {
+        position: absolute;
+        text-decoration: none;
+        list-style: none;
+        width: 15vw;
+        height: 15vh;
+        left: 1100px;
+        top: 30px;
+        background: url(facebook.png);
+        }
+        
+        /* logo twitter 1 */
+        
+        .social-twitter {
+        position: absolute;
+        width: 15vw;
+        height: 15vh;
+        left: 1200px;
+        top: 30px;
+        text-decoration: none;
+        list-style: none;
+        
+        background: url(twitter.png);
+        
+        }
+        /* logo-instagram 1 */
+
+.social-insta{
+    position: absolute;
+    text-decoration: none;
+    list-style: none;
+    width: 15vw;
+    height: 15vh;
+    left: 1000px;
+    top: 30px;
+    
+    background: url(instagram.png);
+    }

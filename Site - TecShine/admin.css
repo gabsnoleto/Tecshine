@@ -1,0 +1,667 @@
+*{
+    padding: 0 auto;
+    margin: 0;
+}
+
+div {
+    
+    display: flex;
+    list-style: none;
+    color: white;
+}
+
+body{
+    background-color: #ffffff;
+}
+/* Fundo (Background da tela de cadastro) */
+.background {
+
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    
+    background: #FFFFFF;
+        
+}
+
+/* Caixa amarela - fundo 1 */
+.background-container {
+    position: absolute;
+    width: 1255px;
+    height: 1250px;
+    left: 30px;
+    top: 80px;
+    
+    background: #FFD600;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25), inset 0px 4px 6px rgba(255, 255, 255, 0.29);
+    border-radius: 15px;
+}
+
+
+/* Caixa transparente - fundo 2 */
+.background-container2{
+
+    position: absolute;
+    width: 1215px;
+    height: 1150px;
+    left: 20px;
+    top: 85px;
+
+    background: rgba(65, 65, 65, 0.5);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+
+}
+
+/*  Cabeçalho*/
+.header {
+    width: 100vw;
+    height: 55px;
+    display: top;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 10px rgba(34, 39, 46, 0.13);
+}
+
+.container{
+    margin: 0 0;
+    width: 90%;
+    
+}
+
+.header-container{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+}
+/* TECHSHINE - Logo */
+#div-logo{
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#div-logo img{
+margin-bottom: 0px;
+width: 40px;
+height: 40px;
+display: flex;
+left: 20px;
+top: 0px;
+flex-direction: row;
+margin-left: 25px;
+
+}
+
+#div-logo h1 {
+font-family: Archivo;
+font-style: normal;
+font-weight: normal;
+font-size: 25px;
+line-height: 40px;
+text-align: center;
+color: #414141;
+margin-left: 10px;
+
+}
+
+.nav-bar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+list-style: none;
+
+
+}
+
+.nav-bar li a{
+font-family: Chivo;
+font-style: normal;
+font-weight: 300;
+font-size: 15px;
+line-height: 24px;
+/* identical to box height */
+text-align: center;
+color: #414141;
+text-decoration: none;
+
+}
+
+.nav-bar li a:hover{
+font-family: Chivo;
+font-style: normal;
+font-weight: 300;
+font-size: 15px;
+line-height: 24px;
+/* identical to box height */
+text-align: center;
+color: #ffd000;
+text-decoration: none;
+transition: 0.5s;
+opacity: 0.9;
+}
+
+
+.nav-bar li {
+margin: 0 50px
+}
+.div-login-cadastro{
+    height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.div-login-cadastro #btn-cadastro, #btn-login{
+    padding: 3px 15px 3px 15px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.div-login-cadastro #btn-cadastro{
+    background-color: #414141;
+    border-radius: 10px;    
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    /* identical to box height */
+    text-align: center;
+    color: #ffd000;
+}
+
+.div-login-cadastro #btn-cadastro:hover{
+    background-color: #414141;
+    border-radius: 10px;    
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    /* identical to box height */
+    text-align: center;
+    color: #414141;
+    background-color: #ffd000;
+    transition: 0.5s;
+}
+
+.div-login-cadastro #btn-login{
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    /* identical to box height */
+    text-align: center;
+    color: #414141;
+}
+
+.div-login-cadastro #btn-login:hover{
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    /* identical to box height */
+    text-align: center;
+    color: #ffd000;
+    transition: 0.5s;
+}
+.div-logo {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    left: 15px;
+    top: 1000px;
+    
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    
+    color: #414141;
+}
+
+/* 1º Container da tela de cadastro (tela amarela) */
+.session1-container{
+margin-top: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+/* Bem-vindo */
+.title{
+    position: absolute;
+    width:500px;
+    height: 100px;
+    left: 420px;
+    top: 90px;
+
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 59px;
+    text-align: center;
+
+    color: #37474F;
+}
+
+.subtitle {
+    position: absolute;
+    width: 1000px;
+    height: 300px;
+    left: 190px;
+    top: 120px;
+    
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 59px;
+    text-align: center;
+    color: #414141;
+}
+
+/* Textos e imagens*/
+.content #texto1{
+    position: absolute;
+    width: 530px;
+    height: 660px;
+    left: 225px;
+    top: 170px;
+    display: flex;
+
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 40px;
+    text-align: end;
+    border-radius: 15px;
+    white-space: pre;
+
+    color: #ffffff;
+}
+
+/* 1ª imagem - Cond. Tiradentes */
+.content #cond1{
+    position: absolute;
+    width: 20vw;
+    height: 20vh;
+    left: -110px;
+    top: 100px;
+    
+}
+
+/* Texto da caixa da 1ª imagem */
+.content #texto4{
+    color: #ffd000;
+    position: absolute;
+    left: 270px;
+    top: 380px;
+    background-color: #37474F;
+    width: 18vw;
+    height: 7vh;
+    border-radius: 15px;
+
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 15px;
+    white-space: pre;
+}
+
+
+/* Parte do CPNJ e Responsável - caixa 1ª imagem */
+.content #sub-t{
+    color: #ffd000;
+    position: absolute;
+    left:10px;
+    top: 18px;
+    word-wrap: break-word;
+
+    border-radius: 15px;
+
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 15px;
+    white-space: pre;
+}
+
+
+
+.content #cond2{
+    position: absolute;
+    width: 20vw;
+    height: 20vh;
+    left: -110px;
+    top: 350px;
+    white-space: pre;
+    line-height: 100px;
+    border-radius: 15px;
+    
+    display: flex;
+}
+
+.content #texto5{
+    color: #ffd000;
+    position: absolute;
+    left: 270px;
+    top: 625px;
+    background-color: #37474F;
+    width: 18vw;
+    height: 7vh;
+    border-radius: 15px;
+
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 15px;
+
+}
+
+.content #sub-v{
+    color: #ffd000;
+    position: absolute;
+    left: 10px;
+    top: 18px;
+    word-wrap: break-word;
+    white-space: break-word;
+
+    border-radius: 15px;
+
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 15px;
+    white-space: pre;
+}
+
+.content #cond3{
+    position: absolute;
+    width: 20vw;
+    height: 20vh;
+    left: -110px;
+    top: 600px;
+    white-space: pre;
+    line-height: 100px;
+    border-radius: 15px;
+    
+    display: flex;
+}
+
+.content #texto6{
+    color: #ffd000;
+    position: absolute;
+    left: 270px;
+    top: 890px;
+    background-color: #37474F;
+    width: 19vw;
+    height: 7vh;
+    border-radius: 15px;
+
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 15px;
+
+}
+
+.content #sub-i{
+    color: #ffd000;
+    position: absolute;
+    left: 13px;
+    top: 18px;
+    word-wrap: break-word;
+    white-space: break-word;
+
+    border-radius: 15px;
+
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 15px;
+    white-space: pre;
+}
+
+.content #cond4{
+    position: absolute;
+    width: 20vw;
+    height: 20vh;
+    left: -110px;
+    top: 850px;
+    white-space: pre;
+    line-height: 100px;
+    border-radius: 15px;
+    
+    display: flex;
+}
+
+.content #texto7{
+    color: #ffd000;
+    position: absolute;
+    left: 270px;
+    top: 1140px;
+    background-color: #37474F;
+    width: 20vw;
+    height: 7vh;
+    border-radius: 15px;
+
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 15px;
+
+}
+
+.content #sub-h{
+    color: #ffd000;
+    position: absolute;
+    left: 14px;
+    top: 20px;
+    word-wrap: break-word;
+    white-space: break-word;
+
+    border-radius: 15px;
+
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 15px;
+    white-space: pre;
+}
+
+
+.content #texto2{
+    position: absolute;
+    width: 755px;
+    height: 660px;
+    left: 415px;
+    top: 170px;
+    
+
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 15px;
+    white-space: pre;
+
+    color: #ffffff;
+}
+
+.content #img1, #img2, #img3, #img4{
+    position: relative;
+    width: 35vw;
+    height: 35vh;
+    flex-direction: center;
+    left: -50px;
+}
+
+/* Imagem da calculadora */
+.content #img5{
+    position: absolute;
+    width: 14vw;
+    height: 23vh;
+    left: 280px;
+    top: 75px;
+}
+
+/* Texto - Calculadora */
+.content #texto3{
+    position: absolute;
+    width: 755px;
+    height: 660px;
+    left: 775px;
+    top: 335px;
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 15px;
+    white-space: pre;
+    color: #ffffff;
+} 
+
+/*SideBar*/
+.menu-lat{
+    top: 900px;
+    color: #ffffff;
+    font-family: Chivo;
+}
+    
+
+/* Footer (Rodapé) do site */
+.container4 {
+    position: absolute;
+    width: 99vw;
+    height: 10vh;
+    left: 0px;
+    top: 1350px;
+    padding: 0;
+    display: flex;
+    background-color: #37474F;
+    }
+    
+    .texto1{
+    position: relative;
+    width: 330px;
+    height: 0px;
+    left: 10px;
+    top: 30px;
+    
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    
+    color: #FFD600;
+    }
+
+
+    .content #predio{
+        position: absolute;
+        width: 2vw;
+        left: 1130px;
+        top: 1085px
+        
+    }
+    
+.content #pessoa{
+    position: absolute;
+    width: 2vw;
+    left: 1130px;
+    top: 1120px
+    
+}
+
+.content #config{
+    position: absolute;
+    width: 4vw;
+    left: 1115px;
+    top: 1198px
+    
+}
+
+.content #int{
+    position: absolute;
+    width: 3vw;
+    left: 1122px;
+    top: 1160px
+    
+}
+/* logo-instagram 1 */
+
+.social-insta{
+    position: absolute;
+    text-decoration: none;
+    list-style: none;
+    width: 25px;
+    height: 25px;
+    left: 1000px;
+    top: 25px;
+    
+    background: url(instagram.png);
+    }
+    
+    /*  logo facebook 1 */
+    .social-facebook {
+    position: absolute;
+    text-decoration: none;
+    list-style: none;
+    width: 25px;
+    height: 25px;
+    left: 1100px;
+    top: 25px;
+    background: url(facebook.png);
+    }
+    
+    /* logo twitter 1 */
+    
+    .social-twitter {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 1200px;
+    top: 25px;
+    text-decoration: none;
+    list-style: none;
+    
+    background: url(twitter.png);
+    
+    }
+    

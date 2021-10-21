@@ -1,0 +1,410 @@
+*{
+    padding: 0 0;
+    margin: 0;
+}
+
+.container-page{
+    background-color: #FFD600;
+}
+.header{
+    background-color: white;
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 4px 50px rgba(34, 39, 46, 0.13);
+}
+.div-background-gradient{
+    background: linear-gradient(180deg, #FFD600 0%, rgba(255, 231, 121, 0.75) 100%);
+}
+.container{
+    margin: 0 auto;
+    width: 80%;
+}
+.header-container{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+#div-logo{
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#div-logo img {
+    margin-bottom: px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#div-logo h1 {
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 33px;
+    text-align: center;
+    color: #414141;
+}
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.nav-bar li a{
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 24px;
+    /* identical to box height */
+    text-align: center;
+    color: #414141;
+    text-decoration: none;
+}
+.nav-bar li {
+    margin: 0 50px
+}
+.div-login-cadastro{
+    height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.div-login-cadastro #btn-cadastrar, #btn-login{
+    padding: 3px 15px 3px 15px;
+    text-decoration: none;
+    font-size: 15px;
+}
+.div-login-cadastro #btn-cadastrar{
+    background-color: #414141;
+    border-radius: 10px;    
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    /* identical to box height */
+    text-align: center;
+    color: #FFFFFF;
+}
+.div-login-cadastro #btn-login{
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    /* identical to box height */
+    text-align: center;
+    color: #414141;
+}
+.session1-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+#center-logo{
+    display: flex;
+    align-items: center;
+}
+#index-img, #logo-img{
+    
+}
+.session1-container #index-img{
+    width: 300px;
+}
+.session1-container #logo-img{
+    margin-bottom: 30px;
+    margin-left: 28px;
+    width: 100px;
+}
+.session1-container #text-logo{
+    margin-left: -20px;
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 75px;
+    line-height: 143px;
+    text-align: center;
+    padding: 0 25px;
+    color: #000000;
+}
+.session2-container{
+    margin-top: 100px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.session2-container img{
+    width: 550px;
+}
+.session2-container a{
+    margin-top: 50px;
+    margin-left: -45px;
+    padding: 6px 22px 6px 22px;
+    text-decoration: none;
+    background-color: #263238;
+    border-radius: 50px;
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 36px;
+    text-align: center;
+    color: #FFD600;
+}
+.session3-container{
+    margin-top: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.sub-titulo {
+    text-align: center;
+    margin: 0 auto;
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 36px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.card-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-container .card-informacao{
+    border-radius: 30px;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    height: 350px;
+    padding: 30px 0 30px 0;
+}
+.card-container .img-card{
+    padding: 0 40px;
+}
+.card-container #img-card3{
+    padding: 16.5px 40px;
+}
+.card-container .titulo-card{
+    padding: 22px;
+}
+.card-container .descricao-card{
+    width: 75%;
+    text-align: center;
+}
+.session4-container{
+    margin-top: 200px;
+}
+.session4-container .container-empresas{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex: column wrap;
+}
+.session4-container .img-empresas{
+    width: 150px;
+}
+.session5{
+    margin-bottom: 125px;
+}
+.session5-container{
+    width: 100%;
+    display: flex;
+    margin-top: 130px;
+}
+.session5-content{
+    width: 50%;
+}
+.session5-content .div-contato{
+    width: 475px;
+    height: 475px;
+    background-color: #63737A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 100%;
+}
+.contato-titulo{
+    margin-top: 160px;
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 36px;
+    text-align: center;
+    color: #FFD600;
+}
+.session5-content p{
+    margin-bottom: 160px;
+    padding: 0 93px;
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFE779;
+}
+.img-contato{
+    margin-left: -180px;
+    margin-bottom: -125px;
+    width: 375px;
+}
+.footer{
+    margin-bottom: 0;
+    background-color: #37474F;
+}
+.footer .container {
+    height: 175px;
+    height: 200px;
+    display: flex;
+}
+.footer .container .div-footer1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: flex-start;
+    width: 50%;
+    height: 100%;
+}
+.footer .footer-direitos{
+    margin-top: 18px;
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFD600;
+}
+.footer .footer-localizacao{
+    margin-top: -60px;
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFD600;
+}
+.footer .container .div-footer2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: flex-end;
+    width: 50%;
+    height: 100%;
+}
+.footer .container .div-footer2 .redes-sociais{
+    width: 40px;
+    height: 40px;
+    margin: 0 27px 0 0;
+}
+
+.session-clc-financeira-container{
+    background-color: white;
+}
+
+.session-clc-financeira-container{
+    background: #FFD600;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(255, 255, 255, 0.29);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    margin-top: 50px;
+
+}
+
+.session-clc-financeira-container h1{
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 59px;
+    text-align: center;
+    color: #000000;
+}
+.session-clc-financeira-container p {
+    width: 100%;
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 24px;
+    text-align: center;
+    color: #414141;
+}
+.session-clc-financeira-container input{
+    width: 240px;
+    height: 25px;
+    background: #E0E0E0;
+    border-radius: 10px;
+    border-color: #E0E0E0;
+    box-shadow: none;
+}
+.session-clc-financeira-container .form{
+    margin-left: -15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 40%;
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: center;
+    color: #414141;
+}
+.session-clc-financeira-container .part2{
+    width: 45%;
+}
+.session-clc-financeira-container label{
+    padding: 25px 0 9px 0 ;
+}
+.session-clc-financeira-container input{
+    margin-right: 300px;
+}
+.session-clc-financeira-container .btn-simular{
+    text-decoration: none;
+    margin-bottom: 20px;
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 36px;
+    /* identical to box height */
+    text-align: center;
+    color: #FFD600;
+    padding: 9px 65px;
+    background: #63737A;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 60px;
+}
