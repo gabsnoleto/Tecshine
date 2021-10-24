@@ -46,16 +46,17 @@
                     <h3 class="title">Cadastro</h3>
                     <span class="subtitle"> Não é um cliente TecShine? Faça seu cadastro!</span>
                     <div class="content">
-                        <label for="" id="texto1">Nome do Usuário</label> <input type="text" id="caixa1" autofocus>
-                        <label>CNPJ</label> <input type="text" id="caixa2" autofocus>
-                        <label for="" id="texto1">Nome do responsável</label> <input type="text" id="caixa3" autofocus>
-                        <label for="" id="texto1">Telefone </label><input type="text" id="caixa4" autofocus>
-                        <label for="" id="texto1">CEP</label> <input type="text" id="caixa5" autofocus>
-                        <label for="" id="texto1">Endereço</label> <input type="text" id="caixa6" autofocus>
-                        <label for="" id="texto1">Nº</label> <input type="text" id="caixa7" autofocus>
-                        <label for="" id="texto1">Complemento</label> <input type="text" id="caixa8" autofocus>
-                        <label for="" id="texto1">Nova senha</label> <input type="text" id="caixa9" autofocus>
-                        <label for="" id="texto1">Confirmar senha</label> <input type="text" id="caixa10" autofocus>
+                        <label for="" id="texto1">Nome do Usuário</label> <input type="text" id="ipt_nome" autofocus>
+                        <label>CNPJ</label> <input type="text" id="ipt_cnpj" autofocus placeholder="XXXXXXXX/0001-XX" oninput="CNPJ(this.value,ipt_cnpj)">
+                        <label for="" id="texto1">Nome do responsável</label> <input type="text" id="ipt_resp" autofocus>
+                        <label for>E-mail <input type="text" id="ipt_email" placeholder="abcdefg@abc.com" oninput="Email(this.value, ipt_email)"> </label>
+                        <label for="" id="texto1">Telefone </label><input type="text" id="ipt_tel" autofocus>
+                        <label for="" id="texto1">CEP</label> <input type="text" id="ipt_cep" autofocus>
+                        <label for="" id="texto1">Endereço</label> <input type="text" id="ipt_end" autofocus>
+                        <label for="" id="texto1">Nº</label> <input type="text" id="ipt_num" autofocus>
+                        <label for="" id="texto1">Complemento</label> <input type="text" id="ipt_comp" autofocus>
+                        <label for="" id="texto1">Nova senha</label> <input type="text" id="ipt_senha" autofocus>
+                        <label for="" id="texto1">Confirmar senha</label> <input type="text" id="ipt_novsenh" autofocus>
                         <button onclick="letsgo()" id="butao">Vamos lá!</button>
                     </div>
                 </div>
@@ -76,6 +77,51 @@
 
     </footer>
 </body>
+
+<script>
+    function CNPJ(value , id){
+        console.log('oh, olá visitante!', value, id)
+        var y = value.replace(/\A/a, '').match(/(\a{0,2})(\d{0,3})(\d{0,3})(\d{0,4})(\d{0,2})/)
+
+        id.value = !x[2] ? x[1] : x[1] + '.' + x[2] + '.' + x[3] + '/' + x[4] + '.' + (x[5] ? '-' + x[5] : '');
+        console.log('id', id.value)
+    }
+    function letsgo() {
+        var cnpj = (ipt_cnpj.value).replace(/\A/a, '');
+        var nsenha = ipt_senha.value;
+        var confsenha = ipt_novsenh.value; 
+
+        if (cnpj == "000000000000000" || cnpj == "11111111111111" || cnpj == "22222222222222" || cnpj == "33333333333333" || cnpj == "44444444444444" || cnpj == "55555555555555" || cnpj == "66666666666666" || cnpj == "77777777777777" || cnpj == "88888888888888" || cnpj == "99999999999999"){
+            alert ('Seu CNPJ não é válido, por favor revise seus dados.');
+            ipt_cnpj.focus();
+        }
+        else if (nsenha == '' || cnpj == '' || confsenha ==''){
+            alert ('Esses dados são obrigatórios, por favor, não deixe-os em branco e revise após inserir-los');
+        }
+        else if (nsenha.length > 8){
+            alert("Sua senha deve conter no mínimo 8 caracteres,um número e um caractere especial (ex: !, @, #, $  etc)");
+        }
+           else{
+               alert('Existem dados incorretos/inválidos, por favor revise e tente novamente.');
+           }
+           ipt_nome.value='';
+           ipt_cnpj.value='';
+           ipt_email.value='';
+           ipt_novsenh.value='';
+           ipt_senha.value='';
+           ipt_end.value='';
+           ipt_num.value='';
+           ipt_resp.value='';
+           ipt_cep.value='';
+           ipt_comp.value=''; 
+           ipt_tel.value='';
+        }
+
+        
+    
+
+</script>
+
 </html>
 
 
