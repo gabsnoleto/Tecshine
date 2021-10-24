@@ -242,7 +242,7 @@ align-items: center;
     font-family: Chivo;
     font-style: normal;
     font-weight: normal;
-    font-size: 50px;
+    font-size: 35px;
     line-height: 59px;
     text-align: center;
 
@@ -259,7 +259,7 @@ align-items: center;
     font-family: Chivo;
     font-style: normal;
     font-weight: normal;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 59px;
     text-align: center;
     color: #414141;
@@ -593,37 +593,70 @@ align-items: center;
     }
 
 
-    .content #predio{
+.content #predio{
         position: absolute;
         width: 2vw;
-        left: 1130px;
-        top: 1085px
+        left: 1080px;
+        top: 1085px;
+        
         
     }
+
+.menu-lat #cnc{
+    position: absolute;
+    left: 1110px;
+    font-size: 10px;
+    top: 1093px;
+    list-style: none;
+}
     
 .content #pessoa{
     position: absolute;
     width: 2vw;
-    left: 1130px;
+    left: 1080px;
     top: 1120px
     
+}
+
+.menu-lat #perf{
+    position: absolute;
+    left: 1110px;
+    font-size: 10px;
+    top: 1130px;
+    list-style: none;  
 }
 
 .content #config{
     position: absolute;
     width: 4vw;
-    left: 1115px;
-    top: 1198px
-    
+    left: 1065px;
+    top: 1198px;    
+}
+
+.menu-lat #dq{
+    position: absolute;
+    left: 1110px;
+    font-size: 10px;
+    top: 1170px;
+    list-style: none;  
 }
 
 .content #int{
     position: absolute;
     width: 3vw;
-    left: 1122px;
+    left: 1070px;
     top: 1160px
     
 }
+
+.menu-lat #conf{
+    position: absolute;
+    left: 1110px;
+    font-size: 10px;
+    top: 1220px;
+    list-style: none;  
+}
+
 /* logo-instagram 1 */
 
 .social-insta{
